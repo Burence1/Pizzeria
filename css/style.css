@@ -3,3 +3,9 @@
   margin-top: 0%;
   position: relative;
 }
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 20em;
+}
