@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   overflow-x: hidden;
   min-width: 100%;
@@ -48,4 +51,26 @@ body{
 
 .Reviews{
   margin-top: 5em;
+}
+
+#recipes{
+  background-image: url(../images/13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 5em;
+  height: 30em;
+}
+.recipe{
+  padding-top: 5em;
+  color: lightgray;
+  font-size: xx-large;
+  text-align: center;
+}
+#contact{
+  text-align: center;
+  margin-top: 5em;
+}
+
+.map{
+  padding-top: 4em;
 }
