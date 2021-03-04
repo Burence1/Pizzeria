@@ -2,6 +2,7 @@ body{
   overflow-x: hidden;
   min-width: 100%;
 }
+
 #carousel{
   top: 0%;
   margin-top: 0%;
@@ -20,4 +21,31 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   line-height: 2em;
+}
+#deliver{
+  padding-top: 4em;
+}
+.card{
+  border: transparent;
+}
+#img2{
+  width: 100%;
+  height: auto;
+}
+
+.review-img{
+  background-image: url(../images/7.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30em;
+}
+.review{
+  text-align: center;
+  color:aliceblue;
+  padding-top: 15em;
+}
+
+.Reviews{
+  margin-top: 5em;
 }
