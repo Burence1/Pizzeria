@@ -1,11 +1,23 @@
+body{
+  overflow-x: hidden;
+  min-width: 100%;
+}
 #carousel{
   top: 0%;
   margin-top: 0%;
-  position: relative;
 }
 .flex-container{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 20em;
+}
+#sec3{
+  background-image: url(../images/5.jpg);
+  margin-top: 5em;
+  padding-top: 6em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 2em;
 }
