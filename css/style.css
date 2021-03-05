@@ -74,3 +74,13 @@ body{
 .map{
   padding-top: 4em;
 }
+
+#mail{
+  height: 20em;
+  background-color: black;
+  margin-top: 5em;
+}
+
+.logo{
+  height: 10em;
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L’ora della Pizza</title>
   <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="./js/bootstrap.js"></script>
@@ -14,26 +15,20 @@
 </head>
 <body>
     <section>
-          <ul class="nav nav-pills nav-fill bg-dark fixed-top" id="nav" style="padding-top: 2em; opacity: 0.5;">
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: blanchedalmond;">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: blanchedalmond;">Order/Delivery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: blanchedalmond;">L’ora della Pizza</a>
-            </li>
-            <li class="nav-item">
-              <img src="." alt="">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: blanchedalmond;">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color: blanchedalmond;">Contact</a>
-            </li>
-          </ul>
+      <ul class="nav justify-content-end fixed-top">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Contacts</a>
+        </li>
+      </ul>
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -43,24 +38,18 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/1.jpg" class="d-block w-100" alt="..." style="height: 40em;">
-            <div class="carousel-caption d-none d-md-block" style="padding-bottom: 7em;">
-              <h5 style="padding-bottom: 6em; font-size: xx-large; color: gray;">L'ora Della Pizza</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <img src="./images/2.jpg" class="d-block w-100" alt="..." style="height: 40em;">
+            <div class="carousel-caption d-none d-md-block" style="padding-bottom: 7em;"> 
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/2.jpg" class="d-block w-100" alt="..." style="height: 40em;">
+            <img src="./images/1.jpg" class="d-block w-100" alt="..." style="height: 40em;">
             <div class="carousel-caption d-none d-md-block" style="padding-bottom: 7em;">
-              <h5 style="padding-bottom: 10em; color: black;">L'ora Della Pizza</h5>
-              <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./images/3.jpg" class="d-block w-100" alt="..." style="height: 40em;">
             <div class="carousel-caption d-none d-md-block" style="padding-bottom: 7em;">
-              <h5 style="padding-bottom: 10em;">L'ora Della Pizza</h5>
-              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
@@ -73,6 +62,17 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div class="container-fluid" style="position: absolute; top: 50px;">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <div class="logo" style="color:black;">
+              <img src="./images/logo.png" alt="">
+              <p>A blend of:</p>
+              <p>love, skill and passion</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   <div class="container-fluid" style="margin-top: 0;">
     <section>
@@ -82,7 +82,7 @@
           <div class="card">
             <div class="card-body">
               <h3 style="text-align: center;">ABOUT</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam
+              <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam
                 soluta modi, nam ad consequatur sequi?
               Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque, viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis interdum a, viverra non ante. Suspendisse vitae tellus in mauris euismod sagittis et nec tellus. Vestibulum iaculis felis orci, et laoreet sem semper at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             </div>
@@ -170,7 +170,7 @@
           <div class="card">
             <div class="card-body">
               <h3 style="text-align: center;">DELIVERIES</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
+              <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
               modi, nam ad consequatur sequi? Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque,
               viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis
               interdum a, viverra non ante. Suspendisse vitae tellus in mauris euismod sagittis et nec tellus. Vestibulum iaculis
@@ -212,7 +212,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="review2">
-                    <h3>REVIEWS</h3><br>
+                    <h3 style="text-align: justify;">REVIEWS</h3><br>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
                     modi, nam ad consequatur sequi? Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque,
                     viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis
@@ -245,7 +245,7 @@
               <div class="card-body">
                 <div class="events">
                   <h3 style="text-align: center;">EVENTS</h3><br>
-                  <p>
+                  <p style="text-align: justify;">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
                     modi, nam ad consequatur sequi? Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque,
                     viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis
@@ -262,7 +262,7 @@
               <div class="card-body">
                 <div class="book">
                   <h3 style="text-align: center;">BOOK A TABLE</h3><br>
-                  <p>
+                  <p style="text-align: justify;">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
                     modi, nam ad consequatur sequi? Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque,
                     viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis
@@ -279,7 +279,7 @@
               <div class="card-body">
                 <div class="open">
                   <h3 style="text-align: center;">OPEN HOURS</h3><br>
-                  <p>
+                  <p style="text-align: justify;">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis placeat nobis perferendis perspiciatis magnam soluta
                     modi, nam ad consequatur sequi? Quisque dignissim tortor ligula, nec auctor velit ultrices eget. Sed neque neque,
                     viverra non ultricies ut, vestibulum quis arcu. In volutpat magna non fringilla molestie. Nulla ex felis, gravida quis
@@ -299,20 +299,17 @@
     <div class="contact" id="contact">
       <h3 style="text-align: center;">CONTACTS</h3><br>
     </div>
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-        <div class="col"><a href="tel:+254795591620">Phone</a></div>
-        <div class="col"><a href="mailto:burensomondi@gmail.com">Email</a></div>
-        <div class="col"><a href="https://web.facebook.com/burence.breavy">Facebook</a> </div>
-        <div class="col"><a href="https://twitter.com/burenceomosh">Twitter</a></div>
-      </div>
-    </div>
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.530971011127!2d36.8530927121363!3d-1.2408219354482435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f167a172b668b%3A0x6ef990d17a447429!2sBalozi%20Estate%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1613127027989!5m2!1sen!2ske"
         width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
       </iframe>
     </div>
+  </div>
+  <div class="container-fluid">
+      <div class="container">
+        
+      </div>
   </div>
 <script src="./js/script.js"></script>
 </body>
