@@ -1,31 +1,26 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: lightgray;
 }
-#order{
+#order, #cart{
   display: flex;
   justify-content: center;
+  padding-top: 5em;
 }
-.size{
-  display: flex;
-  justify-content: flex-start;
-  justify-content:space-around;
+#size{
+  display: none;
 }
-.crust{
-  display: flex;
-  justify-content: flex-start;
-  justify-content: space-around;
+#toppings{
+  display: none;
 }
-.toppings{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+#crust{
+  display: none;
 }
-.delivery{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+#button{
+  display: none;
 }
-.number{
-  display: flex;
-  justify-content: center;
+#mode{
+  display: none;
 }
