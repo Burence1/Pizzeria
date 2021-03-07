@@ -57,55 +57,65 @@
               <div class="card-body">
                 <h2 style="text-align: center;">Let's Order some Pizza</h2>
                 <hr>
-                <div class="type" id="type">
-                  <h4 style="text-align: center;">Pizza type</h4>
-                  <select name="type">
-                    <option value="hawaii">Hawaiian Pizza</option>
-                    <option value="neo">Neopolitan Pizza</option>
-                    <option value="sicilian">Sicilian Pizza</option>
-                    <option value="margherita">Margherita Pizza</option>
-                  </select>
-                </div><br>
-                <div class="size" id="size">
-                  <h4 style="text-align: center;">Pizza Size</h4>
-                  <select name="size">
-                    <option value="small">Small---Kshs.450</option>
-                    <option value="regular">Regular---Kshs.600</option>
-                    <option value="large">Large---Kshs.900</option>
-                    <option value="largest">Extra Large---Kshs.1200</option>
-                  </select>
-                </div><br>
-                <div class="crust" id="crust">
-                  <h4 style="text-align: center;">Select fav Crust</h4>
-                  <select name="crust">
-                    <option value="thin">Thin Crust---Kshs.150</option>
-                    <option value="thick">Thick Crust---Kshs.200</option>
-                    <option value="crispy">Crispy---Kshs.250</option>
-                    <option value="stuffed">Stuffed---Kshs.250</option>
-                  </select>
-                </div><br>
-                <div class="toppings" id="toppings">
-                  <h4 style="text-align: center;">Select fav. Topping(s)</h4>
-                  <input type="checkbox" id="bacon" name="bacon" value="bacon">
-                  <label for="bacon"> Bacon</label><br>
-                  <input type="checkbox" id="sausage" name="sausage" value="sausage">
-                  <label for="sausage"> Sausage</label><br>
-                  <input type="checkbox" id="tomato" name="tomato" value="tomato">
-                  <label for="tomato"> Tomato</label><br>
-                  <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-                  <label for="pepperoni"> Pepperoni</label><br>
-                  <input type="checkbox" id="goat" name="goat" value="goat">
-                  <label for="goat"> Goat Cheese</label><br>
-                </div>
-                <br>
-                <div class="mode" id="mode">
-                  <h4 style="text-align: center;">Delivery or Pickup</h4>
-                  <input type="radio" id="delivery" name="delivery" value="delivery">
-                  <label for="delivery">Delivery</label><br>
-                  <input type="radio" id="pickup" name="pickup" value="pickup">
-                  <label for="pickup">Pickup</label><br>
-                </div>
-                <button type="button" class="btn btn-secondary" id="button">Add to cart</button>
+                <form id="form">
+                  <div class="type" id="type">
+                    <h4 style="text-align: center;">Pizza type</h4>
+                    <select name="pizza" id="pizza">
+                      <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                      <option value="Neopolitan Pizza">Neopolitan Pizza</option>
+                      <option value="Sicilian Pizza">Sicilian Pizza</option>
+                      <option value="Margherita Pizza">Margherita Pizza</option>
+                    </select>
+                  </div><hr>
+
+                  <label for="quantity">Quantity</label>
+                  <input type="text" id="quantity" name="quantity" value="0">
+                  <hr>
+                  <label for="size">Size</label><br>
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Small">
+                  <label class="form-check-label" for="sizeSmall">
+                    Small -- Ksh.550</label><br>
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Regular">
+                  <label class="form-check-label" for="sizeSmall">
+                    Medium -- Ksh.650</label><br>
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Large">
+                  <label class="form-check-label" for="sizeSmall">
+                    Large -- Ksh.900
+                  </label>
+                  <hr>
+                  <label for="crust">Crust</label><br>
+                  <input class="form-check-input" type="radio" name="crustPizza" id="option1" value="Thick">
+                  <label class="form-check-label" for="sizeSmall">
+                    Thick</label> <br>
+                  <input class="form-check-input" type="radio" name="crustPizza" id="option1" value="Thin">
+                  <label class="form-check-label" for="sizeSmall">
+                    Thin
+                  </label><br>
+                  <input class="form-check-input" type="radio" name="crustPizza" id="option1" value="Crispy">
+                  <label class="form-check-label" for="sizeSmall">
+                    Crispy
+                  </label>
+                  <hr>
+
+                  <div class="toppings">
+                    <label for="toppings">Select your toppings</label>
+                    <p>Ksh.150 per topping</p>
+                    <input type="checkbox" value="sausage" name="toppings" id="sausage">
+                    <label for="Sausage">Sausage</label><br>
+                    <input type="checkbox" value="tomato" name="toppings" id="tomato">
+                    <label for="Tomato">Tomato</label><br>
+                    <input type="checkbox" value="pepperoni" name="toppings" id="pepperoni">
+                    <label for="Pepperoni">Pepperoni</label>
+                    <br>
+                    <input type="checkbox" value="bacon" name="toppings" id="bacon">
+                    <label for="Bacon">Bacon</label>
+                    <br>
+                    <input type="checkbox" value="goat cheese" name="toppings" id="goat-cheese">
+                    <label for="Goat Cheese">Goat Cheese</label><br>
+                    <button type="submit" class="btn btn-secondary" onclick="submit">Add To Cart</button>
+                  </div>
+                  <br>
+                </form>
               </div>
             </div>
           </div>
@@ -113,7 +123,37 @@
       <div class="col" id="cart">
         <div class="card">
           <div class="card-body">
-            <h2 style="text-align: center;">SELECTION SUMMARY</h2><hr>
+            <h2 style="text-align: center;">SELECTION SUMMARY</h2>
+            <h4 style="text-align: center;">(CART)</h4><hr>
+            
+            <div class="card-body">
+              <div id="cost">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <p>Pizza Type: <span id="displayName"></span></p>
+                    <p>Size: <span id="displayToppings"></span></p>
+                    <p>Crust: <span id="displaySize"></span></p>
+                    <p>Topping(s): <span id="displayCrust"></span></p>
+                    <p>Single Pizza: <span id="displayTotalCost"></span></p>
+                    <p>Multiple Pizzas: <span id="displayQuantity"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pickup">
+              <h4 style="text-align: center;">Delivery or Pickup?</h4>
+              <h6 style="text-align: center;">Delivery costs an extra Kshs. 150</h6>
+              <div class="card-body" id="transport">
+                <button id="pickup" class="btn btn-secondary" onclick="click">Pickup</button>
+                <button id="delivery" class="btn btn-secondary" onclick="click">Delivery</button>
+              </div>
+                <form action="" class="address" id="address">
+                  <input type="text" name="name" id="name" value="name">
+                  <input type="text" name="location" id="location" value="location">
+                  <input type="text" name="number" id="number" value="number">
+                  <button type="submit" id="submit" class="btn btn-secondary" onclick="submit">Checkout</button>
+                </form>
           </div>
         </div>
       </div>

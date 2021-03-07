@@ -18,7 +18,7 @@ body{
   height: 20em;
 }
 #sec3{
-  background-image: url(../images/5.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/5.jpg);
   margin-top: 5em;
   padding-top: 6em;
   background-size: cover;
@@ -55,7 +55,7 @@ body{
 }
 
 #recipes{
-  background-image: url(../images/13.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/13.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-top: 5em;
