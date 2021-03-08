@@ -69,7 +69,7 @@ $(document).ready(function () {
     var type = $("#pizza option:selected").val();
     var checkedSize = $("input:radio[name=sizePizza]:checked").val();
     var checkedCrust = $("input:radio[name=crustPizza]:checked").val();
-    var quantity = parseInt($("#quantity").val(),10);
+    var quantity = parseInt($("#quantity").val());
     var checkedToppings = [];
     var pizzaQuantity = grandCost * quantity;
     $("input:checkbox[name=toppings]:checked").each(function () {
