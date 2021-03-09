@@ -11,7 +11,7 @@
 {Additionally, all the required assets are available in the linked remote repository. All you need is a text editor of your choice}
 
 ## Known Bugs
-{The project works perfectly and has no bugs}
+{The add to cart button has to be clicked more than once to display the multiple pizzas cost}
 
 ## Technologies used
 * HTML
@@ -19,6 +19,9 @@
 * Bootstrap
 * Jquery
 * Javascript
+
+## Link to liver server
+{The project has been hosted using Github Pages and is accessible via https://burence1.github.io/Pizzeria/ }
 
 ## Support and Contact Details
 {Incase of any issues or need to contribute to the project, you can reach me via;

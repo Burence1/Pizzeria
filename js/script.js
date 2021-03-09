@@ -1,18 +1,3 @@
-$(document).ready(function () {
-  $("#type").click(function () {
-    $("#size").slideDown(800);
-  })
-  $("#size").click(function () {
-    $("#crust").slideDown(800);
-  })
-  $("#crust").click(function () {
-    $("#toppings").slideDown(800);
-  })
-  $("#toppings").click(function () {
-    $("#button").slideDown(800);
-  })
-});
-
 
 //business interface
 function Pizza(toppings, size, crust) {
@@ -21,7 +6,7 @@ function Pizza(toppings, size, crust) {
   this.crust = crust;
   this.quantity = quantity;
 }
-
+//compute topping(s) cost
 Pizza.prototype.calcToppings = function () {
   if (this.toppings.length != 0) {
     var toppingCost = this.toppings.length * 150;
@@ -29,7 +14,7 @@ Pizza.prototype.calcToppings = function () {
   } else
     alert("select Fav Topping(s)")
 }
-
+//compute pizza price based on size
 Pizza.prototype.pSize = function () {
   if (this.size === "Small") {
     return 550;
@@ -40,7 +25,7 @@ Pizza.prototype.pSize = function () {
   } else
     alert("Go ahead and select size of choice");
 }
-
+//compute crust cost
 Pizza.prototype.selectCrust = function () {
   if (this.crust === "Thick") {
     return 250
@@ -54,13 +39,13 @@ Pizza.prototype.selectCrust = function () {
 let grandCost;
 Pizza.prototype.totalCost = function (calcToppings, pSize, selectCrust) {
   grandCost = calcToppings + pSize + selectCrust;
-  $("#displayTotalCost").html(grandCost);
+  $("#showTotalCost").html(grandCost);
   ;
 }
 
-//user interface
 
-//calculation of total pizza price
+
+//User interface
 var pizza, pizzaQuantity;
 $(document).ready(function () {
   $("#form").submit(function (event) {
@@ -76,12 +61,12 @@ $(document).ready(function () {
       checkedToppings.push($(this).val());
     });
     
-
-    $("#displaySize").text(checkedSize);
-    $("#displayCrust").text(checkedCrust);
-    $("#displayName").text(type);
-    $("#displayToppings").text(checkedToppings);
-    $("#displayQuantity").text(pizzaQuantity);
+//display customer selections
+    $("#showSize").text(checkedSize);
+    $("#showCrust").text(checkedCrust);
+    $("#showName").text(type);
+    $("#showToppings").text(checkedToppings);
+    $("#showQuantity").text(pizzaQuantity);
 
     pizza = new Pizza(checkedToppings, checkedSize, checkedCrust);
 
@@ -89,23 +74,26 @@ $(document).ready(function () {
     var pSize = pizza.pSize();
     var selectCrust = pizza.selectCrust();
     pizza.totalCost(pSize, calcToppings, selectCrust);
-    console.log(pizza);
   });
 });
 
-//pickup option
+//pickup button
 $("#pickup").click(function () {
-  alert("Your Pizza will be ready in less than an hour. Your bil stands at Kshs. " + grandCost);
+  alert("Your Pizza will be ready in less than an hour. Your bill stands at Kshs. " + grandCost);
 });
 
-//delivery option
+//delivery button
+$("#delivery").click(function(){
+  alert("Delivery costs an extra Kshs. 200, proceed and enter contact details");
+})
+//checkout and adding delivery fee
 $("#submit").click(function () {
   var Name = $("#name").val();
   var location = $("#location").val();
   var Telephone = $("#number").val();
   var finalDeliveryTotal = grandCost + 200;
   if (Name == "" || location == "" || Telephone == "") {
-    alert("Enter Contact details")
+    alert("Provide Contact details")
   } else {
     alert("Thank you " + Name + "for letting us serve you, your pizza will be delivered to " + location + " in less than an hour." + "Your bill amounts to Kshs." + finalDeliveryTotal);
   }

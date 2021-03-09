@@ -24,7 +24,7 @@
         <a class="nav-link" href="#order" style="color: black;">Order</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color: black;">Contacts</a>
+        <a class="nav-link" href="../index.html" style="color: black;">Contacts</a>
       </li>
     </ul>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -69,7 +69,7 @@
                   </div><hr>
 
                   <label for="quantity">Quantity</label>
-                  <input type="text" id="quantity" name="quantity" value="0">
+                  <input type="text" id="quantity" name="quantity" value="1">
                   <hr>
                   <label for="size">Size</label><br>
                   <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Small">
@@ -130,12 +130,12 @@
               <div id="cost">
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <p>Pizza Type: <span id="displayName"></span></p>
-                    <p>Size: <span id="displayToppings"></span></p>
-                    <p>Crust: <span id="displaySize"></span></p>
-                    <p>Topping(s): <span id="displayCrust"></span></p>
-                    <p>Single Pizza: <span id="displayTotalCost"></span></p>
-                    <p>Multiple Pizzas: <span id="displayQuantity"></span></p>
+                    <p>Pizza Type: <span id="showName"></span></p>
+                    <p>Size: <span id="showToppings"></span></p>
+                    <p>Crust: <span id="showSize"></span></p>
+                    <p>Topping(s): <span id="showCrust"></span></p>
+                    <p>Single Pizza: <span id="showTotalCost"></span></p>
+                    <p>Multiple Pizzas: <span id="showQuantity"></span></p>
                   </div>
                 </div>
               </div>
@@ -143,7 +143,6 @@
 
             <div class="pickup">
               <h4 style="text-align: center;">Delivery or Pickup?</h4>
-              <h6 style="text-align: center;">Delivery costs an extra Kshs. 150</h6>
               <div class="card-body" id="transport">
                 <button id="pickup" class="btn btn-secondary" onclick="click">Pickup</button>
                 <button id="delivery" class="btn btn-secondary" onclick="click">Delivery</button>
@@ -156,6 +155,17 @@
                 </form>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid" id="logo1">
+    <div class="card" style="background-color: beige;">
+      <div class="card-body">
+        <div class="logo2" id="logo">
+          <img src="../images/logo.png" alt="">
+        </div>
+        <footer style="text-align: center;"> <small>&copy; Copyright 2021, L'ora Della Pizza</small> </footer>
       </div>
     </div>
   </div>

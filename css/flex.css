@@ -8,8 +8,6 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 5em;
-  /* background-image: url(../images/17.jpg);
-  background-size: cover; */
 }
 .pickup{
   display: flex;
@@ -38,4 +36,13 @@ body{
 #order-section{
   background-image: url(../images/17.jpg);
   background-size: cover;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+}
+#logo1{
+  padding-top: 4em;
 }
